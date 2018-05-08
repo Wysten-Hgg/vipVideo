@@ -1,0 +1,6 @@
+[2018-01-04 12:47:07] Processing: App\Jobs\SendEmail
+[2018-01-04 12:47:08] Processed:  App\Jobs\SendEmail
+[2018-01-04 12:51:16] Processing: App\Jobs\SendEmail
+[2018-01-04 12:51:26] Processed:  App\Jobs\SendEmail
+[2018-01-04 12:57:15] Processing: App\Jobs\SendEmail
+[2018-01-04 12:57:18] Processed:  App\Jobs\SendEmail

@@ -1,0 +1,41 @@
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+<script>
+
+    $(function(){
+
+        $.ajax({
+            type: "POST",
+            url: "http://wanghangweika.mugeda.com/server/telecom.php/check",
+            //contentType: "application/json; charset=utf-8",
+            data:  {phone:"18222713750",userpackage:"25"},
+            dataType: "json",
+            headers: {
+                time:'1522636210',
+                sign:'962751ae92dde202b96264a57568321b'
+            },
+            async : false,
+            success: function(data){
+
+                console.log(data);
+                $.ajax({
+                    type: "POST",
+                    async: false,
+                    url: "http://111.13.21.137/tftc_order_intf/mo",
+                    contentType: "application/json; charset=utf-8",
+                    data:  JSON.stringify(data.body),
+
+                    dataType: "json",
+                    success: function(data){
+                        console.log(data);
+                    }
+                });
+            }
+        });
+
+
+    });
+
+</script>
