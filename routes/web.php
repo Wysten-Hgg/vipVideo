@@ -44,6 +44,8 @@ Route::post('feedback','MovieController@feedback');
 
 Route::get('captcha',"UserController@captcha");
 
+Route::get('longconnect',"ServerController@server_start");
+
 Route::post('register',"UserController@register");
 
 Route::post('login',"UserController@login");

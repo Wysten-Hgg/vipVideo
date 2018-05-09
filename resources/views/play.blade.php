@@ -17,9 +17,9 @@
     <div class="mdui-text-center">
         <select id="select" class="mdui-select">
             <option value="http://000o.cc/jx/ty.php?url=">线路1(推荐)</option>
-            <option value="http://j.zz22x.com/jx/?url=">线路2(腾讯故障)</option>
-            <option value="http://jx.vgoodapi.com/jx.php?url=">线路3(腾讯故障)</option>
-            <option value="http://jiexi.92fz.cn/player/vip.php?url=">线路4(腾讯可看)</option>
+            <option value="http://j.zz22x.com/jx/?url=">线路2</option>
+            <option value="http://jx.vgoodapi.com/jx.php?url=">线路3</option>
+            <option value="http://jiexi.92fz.cn/player/vip.php?url=">线路4</option>
         </select>
     </div>
 
@@ -69,5 +69,22 @@
 
 
 </script>
+
+
+<script type="text/javascript">
+    if(window.WebSocket){
+        var webSocket = new WebSocket("ws://101.201.67.69:9503?uid={{Session('uid')}}");
+
+        webSocket.onopen = function (event) {
+        };
+        webSocket.onmessage = function (event) {
+        };
+
+    }else{
+        console.log("您的浏览器不支持WebSocket");
+    }
+</script>
+
+
 </body>
 </html>

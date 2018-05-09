@@ -12,6 +12,7 @@
             <a href="javascript:void(0);" class="mdui-list-item mdui-ripple " onclick="goLastWatch('{{Session('lastLink')}}')"><span style="font-size: small">上次观看<span class="mdui-text-color-pink">{{Session('lastWatch')}}</span>
                 </span></a>
             <a href="javascript:void(0)" onclick="goLastWatch('mySubscribe')" class="mdui-list-item mdui-ripple ">我的订阅</a>
+            <a href="javascript:void(0)" class="mdui-list-item mdui-ripple ">总观看时长 <span style="font-size: small;" class="mdui-text-color-pink">{{Session('uid') ? $sumtimes : ''}}</span></a>
             {{--<a href="./grid" class="mdui-list-item mdui-ripple ">网格布局</a>--}}
             {{--<a href="./typo" class="mdui-list-item mdui-ripple ">排版</a>--}}
             {{--<a href="./icon" class="mdui-list-item mdui-ripple ">图标</a>--}}
